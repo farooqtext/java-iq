@@ -15,7 +15,6 @@ app_version: 1.18.37
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-<!-- NOTE-swimm-repo ::Z2l0aHViJTNBJTNBSW50ZXJ2aWV3UXVlc3Rpb25zJTNBJTNBZmFyb29vcQ==:: -->
 ### 📄 com/code/logics/PrintPatterns.java
 ```java
 7          public static void printRectangle() {
@@ -40,7 +39,6 @@ app_version: 1.18.37
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-<!-- NOTE-swimm-repo ::Z2l0aHViJTNBJTNBSW50ZXJ2aWV3UXVlc3Rpb25zJTNBJTNBZmFyb29vcQ==:: -->
 ### 📄 com/code/logics/PrintPatterns.java
 ```java
 15         public static void printHallowRectangle() {
@@ -71,7 +69,6 @@ app_version: 1.18.37
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-<!-- NOTE-swimm-repo ::Z2l0aHViJTNBJTNBSW50ZXJ2aWV3UXVlc3Rpb25zJTNBJTNBZmFyb29vcQ==:: -->
 ### 📄 com/code/logics/PrintPatterns.java
 ```java
 29         public static void printHalfPyramid() {
@@ -97,7 +94,6 @@ app_version: 1.18.37
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-<!-- NOTE-swimm-repo ::Z2l0aHViJTNBJTNBSW50ZXJ2aWV3UXVlc3Rpb25zJTNBJTNBZmFyb29vcQ==:: -->
 ### 📄 com/code/logics/PrintPatterns.java
 ```java
 38         public static void invertedHalfPyramid() {
@@ -127,7 +123,6 @@ app_version: 1.18.37
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-<!-- NOTE-swimm-repo ::Z2l0aHViJTNBJTNBSW50ZXJ2aWV3UXVlc3Rpb25zJTNBJTNBZmFyb29vcQ==:: -->
 ### 📄 com/code/logics/PrintPatterns.java
 ```java
 51         public static void floydsTriangle() {
@@ -154,7 +149,6 @@ app_version: 1.18.37
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-<!-- NOTE-swimm-repo ::Z2l0aHViJTNBJTNBSW50ZXJ2aWV3UXVlc3Rpb25zJTNBJTNBZmFyb29vcQ==:: -->
 ### 📄 com/code/logics/PrintPatterns.java
 ```java
 62         public static void zeroOneTriangle() {
@@ -185,7 +179,6 @@ app_version: 1.18.37
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-<!-- NOTE-swimm-repo ::Z2l0aHViJTNBJTNBSW50ZXJ2aWV3UXVlc3Rpb25zJTNBJTNBZmFyb29vcQ==:: -->
 ### 📄 com/code/logics/PrintPatterns.java
 ```java
 77         public static void butterflyPattern() {
@@ -231,7 +224,6 @@ app_version: 1.18.37
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-<!-- NOTE-swimm-repo ::Z2l0aHViJTNBJTNBSW50ZXJ2aWV3UXVlc3Rpb25zJTNBJTNBZmFyb29vcQ==:: -->
 ### 📄 com/code/logics/PrintPatterns.java
 ```java
 107        public static void rombusPattern() {
@@ -261,7 +253,6 @@ app_version: 1.18.37
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-<!-- NOTE-swimm-repo ::Z2l0aHViJTNBJTNBSW50ZXJ2aWV3UXVlc3Rpb25zJTNBJTNBZmFyb29vcQ==:: -->
 ### 📄 com/code/logics/PrintPatterns.java
 ```java
 121        public static void pyramidPattern() {
@@ -292,7 +283,6 @@ app_version: 1.18.37
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-<!-- NOTE-swimm-repo ::Z2l0aHViJTNBJTNBSW50ZXJ2aWV3UXVlc3Rpb25zJTNBJTNBZmFyb29vcQ==:: -->
 ### 📄 com/code/logics/PrintPatterns.java
 ```java
 136        public static void palindromicPattern() {
