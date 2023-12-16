@@ -1,5 +1,6 @@
-package com.code.java8;
+package com.code.java8.functionalinterfaces;
 
+import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
 public class PredicateFunctionDemo {
@@ -14,7 +15,11 @@ public class PredicateFunctionDemo {
 
 //        Predicate Joining
         boolean combinedResult = checkLength.and(checkValue).test("Code Decode");
-        System.out.println(combinedResult);
+//        System.out.println(combinedResult);
+
+//        BiPredicate
+        BiPredicate<Integer, Integer> biPredicate = (a, b) -> a + b >=5;
+        System.out.println(biPredicate.test(4,1));
     }
     
 }

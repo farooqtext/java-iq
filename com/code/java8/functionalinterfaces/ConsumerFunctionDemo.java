@@ -1,5 +1,6 @@
-package com.code.java8;
+package com.code.java8.functionalinterfaces;
 
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 public class ConsumerFunctionDemo {
@@ -17,7 +18,11 @@ public class ConsumerFunctionDemo {
         sqareMe.accept(5);
 
 //        ConsumerChaining
+        sqareMe.andThen(squareMe1).accept(3);
 
+//        BiConsumer
+        BiConsumer<Integer, Integer> biConsumer = (a, b) -> System.out.println(a*b);
+        biConsumer.accept(3,5);
     }
 
     public static void squareMe(int i) {

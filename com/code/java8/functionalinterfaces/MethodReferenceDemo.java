@@ -1,4 +1,4 @@
-package com.code.java8;
+package com.code.java8.functionalinterfaces;
 
 
 public class MethodReferenceDemo {

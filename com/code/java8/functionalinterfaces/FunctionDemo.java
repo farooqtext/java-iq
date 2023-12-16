@@ -1,5 +1,6 @@
-package com.code.java8;
+package com.code.java8.functionalinterfaces;
 
+import java.util.function.BiFunction;
 import java.util.function.Function;
 
 public class FunctionDemo {
@@ -15,5 +16,10 @@ public class FunctionDemo {
 //        Functional Chaining
         Integer chainResult = squareMe.andThen(cubeMe).apply(3);
         System.out.println(chainResult);
+
+//        BiFunction
+        BiFunction<Integer, Integer, Integer> biFunction = (a, b) -> a + b;
+        Integer resultBiFunction = biFunction.apply(2, 5);
+        System.out.println(resultBiFunction);
     }
 }

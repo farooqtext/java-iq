@@ -1,6 +1,6 @@
 ---
 id: fx5ktnnk
-title: Java8 Features
+title: Java8 Functional Interfaces
 file_version: 1.1.3
 app_version: 1.18.37
 ---
@@ -29,7 +29,7 @@ app_version: 1.18.37
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 com/code/java8/LambdaDemo.java
+### 📄 com/code/java8/functionalinterfaces/LambdaDemo.java
 ```java
 9              BiConsumer<Integer, Integer> biConsumer = (a,b) -> System.out.print(a + b);
 10             biConsumer.accept(3,5);
@@ -61,7 +61,7 @@ app_version: 1.18.37
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 com/code/java8/FunctionalInterfaceDemo.java
+### 📄 com/code/java8/functionalinterfaces/FunctionalInterfaceDemo.java
 ```java
 3      @FunctionalInterface
 4      public interface FunctionalInterfaceDemo {
@@ -94,7 +94,7 @@ app_version: 1.18.37
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 com/code/java8/MethodReferenceDemo.java
+### 📄 com/code/java8/functionalinterfaces/MethodReferenceDemo.java
 ```java
 4      public class MethodReferenceDemo {
 5          public static void main(String[] args) {
@@ -121,7 +121,7 @@ Interfaces can now have default methods. **_This allows you to add new functiona
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 com/code/java8/FunctionalInterfaceDemo.java
+### 📄 com/code/java8/functionalinterfaces/FunctionalInterfaceDemo.java
 ```java
 8          default void printName() {
 9              System.out.println("Print Name");
@@ -144,13 +144,9 @@ The Arrays class now has a **_parallelSort()_** method that can be used to sort 
 
 ## **Date API**
 
-<br/>
-
 # **Why static methods were introduced in java8 ?**
 
 Creating class and then its object is costly. Since interface can never contain _Constructors, Static blocks._ Hence we don't need to create object which need low memory and improves performance.
-
-<br/>
 
 # Predicate Functional Interface ?
 
@@ -166,7 +162,7 @@ _Advantage of Predicate:_
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 com/code/java8/PredicateFunctionDemo.java
+### 📄 com/code/java8/functionalinterfaces/PredicateFunctionDemo.java
 ```java
 8              Predicate<String> checkLength = s -> s.length() >= 10;
 9              boolean validateString = checkLength.test("Hello this is Test");
@@ -186,10 +182,10 @@ We can join multiple condition use and() or() negate()
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 com/code/java8/PredicateFunctionDemo.java
+### 📄 com/code/java8/functionalinterfaces/PredicateFunctionDemo.java
 ```java
-16             boolean combinedResult = checkLength.and(checkValue).test("Code Decode");
-17             System.out.println(combinedResult);
+17             boolean combinedResult = checkLength.and(checkValue).test("Code Decode");
+18     //        System.out.println(combinedResult);
 ```
 
 <br/>
@@ -204,7 +200,7 @@ Consumer takes 1 input and return nothing.
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 com/code/java8/ConsumerFunctionDemo.java
+### 📄 com/code/java8/functionalinterfaces/ConsumerFunctionDemo.java
 ```java
 7          public static void main(String[] args) {
 8      //        Using Lambda Expression
@@ -213,6 +209,37 @@ Consumer takes 1 input and return nothing.
 ```
 
 <br/>
+
+**Consumer Chaining:**
+
+<br/>
+
+
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 com/code/java8/functionalinterfaces/ConsumerFunctionDemo.java
+```java
+20             sqareMe.andThen(squareMe1).accept(3);
+```
+
+<br/>
+
+# Supplier Functional Interface ?
+
+Supplier is opposite to Consumer. It takes nothing but returns output.
+
+<br/>
+
+
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 com/code/java8/functionalinterfaces/SupplierFunctionDemo.java
+```java
+8              Supplier<Date> date = () -> new Date();
+9              System.out.println(date.get());
+```
+
+<br/>
+
+There is no input that we provide to the supplier, hence there is no functional chaining.
 
 # Function Functional Interface?
 
@@ -228,7 +255,7 @@ Function accepts any type of input and returns any type of output.
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 com/code/java8/FunctionDemo.java
+### 📄 com/code/java8/functionalinterfaces/FunctionDemo.java
 ```java
 7              Function<Integer, Integer> squareMe = i -> i * i;
 8              Integer result = squareMe.apply(5);
@@ -244,15 +271,11 @@ Functional chaining is helpful to perform multiple operations at the same time.
 
 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 com/code/java8/FunctionDemo.java
+### 📄 com/code/java8/functionalinterfaces/FunctionDemo.java
 ```java
 16             Integer chainResult = squareMe.andThen(cubeMe).apply(3);
 17             System.out.println(chainResult);
 ```
-
-<br/>
-
-<br/>
 
 <br/>
 
